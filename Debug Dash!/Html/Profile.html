@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/Profile.css">
+    <link rel="stylesheet" href="/Css/NavMenu.css">
+    <link rel="icon" type="image/svg+xml" href="/Pics/dd-favicon.svg">
+    <script type="module" src="/Js/NavMenu.js" defer></script>
+    <script type="module" src="/Js/Profile.js" defer></script>
+    <title>Debug Dash! - Profile</title>
+</head>
+<body>
+    <nav>
+        <h1>Debug Dash!</h1>
+        <ul>
+            <li id="home">Home</li>
+            <li id="debug">Debug</li>
+            <li id="endless">Endless</li>
+            <li id="achieve">Achievements</li>
+        </ul>
+        <img src="/pics/profile.png" alt="profile" id="profile" data-link="/Html/Profile.html">
+    </nav>
+
+    <div class="profile">
+        <div class="pfp"><img src="/Pics/guest.jfif" alt="pfp"></div>
+        <img src="/Pics/pen.png" alt="pen" class="pen" id="changepfp">
+        <p id="user">Player</p>
+        <div class="titleRow">
+            <div class="title">
+                <p id="title1">No title yet</p>
+                <p id="title2"></p>
+                <p id="title3"></p>
+                <p id="title4"></p>
+            </div>
+            <button id="editTags" type="button" aria-label="Edit Tags">
+                <img src="/Pics/pen.png" alt="edit tags">
+            </button>
+        </div>
+        <div class="scale">
+            <div class="level">
+                <h1 id="complete">0</h1>
+                <p>Level Completed</p>
+            </div>
+            <div class="streak">
+                <h1 id="end">0</h1>
+                <p>Best Run</p>
+            </div>
+            <div class="achievement">
+                <h1 id="achi">0</h1>
+                <p>Achievements</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="endstreak">
+        <p>Best Run Per Language</p>
+        <div class="langs">
+            <div class="html">
+                <p>Html</p>
+                <img src="/Pics/streak.png" alt="streak" class="fire1">
+                <p id="htmlStreak">0</p>
+            </div>
+            <div class="css">
+                <p>Css</p>
+                <img src="/Pics/streak.png" alt="streak" class="fire2">
+                <p id="cssStreak">0</p>
+            </div>
+            <div class="js">
+                <p>Java Script</p>
+                <img src="/Pics/streak.png" alt="streak" class="fire3">
+                <p id="jsStreak">0</p>
+            </div>
+            <div class="java">
+                <p>Java</p>
+                <img src="/Pics/streak.png" alt="streak" class="fire4">
+                <p id="javaStreak">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats">
+        <p>Statistics</p>
+        <div class="line">
+            <div>
+                <h5>Correct Answers</h5>
+                <p id="correct">0</p>
+            </div>
+            <div>
+                <h5>Wrong Answers</h5>
+                <p id="wrong">0</p>
+            </div>
+        </div>
+    </div>
+    <div id="levels"></div>
+    <div class="imgs" id="imgs">
+        <img src="/Pics/reject.png" alt="exit" id="exit">
+        <div class="avatars1">
+            <img src="/Pics/avatar1.jfif" alt="avatar1">
+            <img src="/Pics/avatar2.jfif" alt="avatar2">
+            <img src="/Pics/avatar3.jfif" alt="avatar3">
+            <img src="/Pics/avatar4.jfif" alt="avatar4">
+            <img src="/Pics/avatar5.jfif" alt="avatar5">
+        </div>
+        <div class="avatars2">
+            <img src="/Pics/avatar6.jfif" alt="avatar6">
+            <img src="/Pics/avatar7.jfif" alt="avatar7">
+            <img src="/Pics/avatar8.jfif" alt="avatar8">
+            <img src="/Pics/avatar9.jfif" alt="avatar9">
+            <img src="/Pics/avatar10.jfif" alt="avatar10">
+        </div>
+    </div>
+
+    <div class="titleselect" id="tagSelector">
+        <h3>Choose up to 4 tags</h3>
+        <div class="tag-options" id="tagOptions"></div>
+        <div class="tag-actions">
+            <button id="saveTags" type="button">Save</button>
+            <button id="closeTags" type="button">Cancel</button>
+        </div>
+    </div>
+</body>
+</html>

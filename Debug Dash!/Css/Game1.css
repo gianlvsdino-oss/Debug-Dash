@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(1200px 600px at 20% -10%, #1b2a4a 0%, rgba(27,42,74,0) 60%),
+        radial-gradient(900px 500px at 90% 10%, #2a1b4a 0%, rgba(42,27,74,0) 55%),
+        linear-gradient(160deg, #0b0f14 0%, #0f1623 35%, #111827 70%, #0b1020 100%);
+    color: #e6edf3;
+    animation: fadeIn 0.7s ease forwards;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes dashPulse {
+    0% {
+        opacity: 0.3;
+        transform: translateX(-16px) scaleX(0.55);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(6px) scaleX(1);
+    }
+    100% {
+        opacity: 0.3;
+        transform: translateX(-16px) scaleX(0.55);
+    }
+}
+
+@keyframes dashSweepGame {
+    0% {
+        opacity: 0.2;
+        transform: translateX(-12px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(12px);
+    }
+    100% {
+        opacity: 0.2;
+        transform: translateX(-12px);
+    }
+}
+
+#back {
+    display: block;
+    justify-self: start;
+    width: 30px;
+    margin-top: -560px;
+    margin-left: 30px;
+    scale: 1;
+    transition: 0.3s ease;
+}
+
+#back:hover {
+    scale: 1.08;
+}
+
+#back:active {
+    scale: 0.97;
+}
+
+/*              Head        */
+
+.box1 {
+    display: block;
+    justify-self: center;
+    position: relative;
+    background-color: rgba(27, 43, 121, 0.541);
+    border: 2px solid #6893ff;
+    border-radius: 14px;
+    padding: 10px;
+    width: 600px;
+    height: 130px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.box1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -18%;
+    width: 36%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(105, 147, 255, 0), rgba(105, 147, 255, 0.2), rgba(114, 236, 255, 0.42), rgba(105, 147, 255, 0));
+    transform: skewX(-22deg);
+    animation: dashSweepGame 2.6s ease-in-out infinite;
+}
+
+.box1 h1 {
+    position: relative;
+    text-align: start;
+    font-family: "Poppins";
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+.box1 h1 span{
+    position: relative;
+    display: inline-block;
+    color: rgb(18, 137, 255);
+    text-shadow: 0px 0px 15px rgb(0, 132, 255);
+}
+
+.box1 h1 span::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 42px;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(18, 137, 255, 0.08), rgba(18, 137, 255, 1));
+    box-shadow: 0 0 15px rgba(0, 132, 255, 0.55);
+    transform-origin: left center;
+    animation: dashPulse 1.6s ease-in-out infinite;
+}
+
+.language {
+    text-align: start;
+    font-family: "Space Grotesk";
+    font-size: 16px;
+}
+
+.levelnlang {
+    display: flex;
+    justify-self: start;
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    gap: 12px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.timenheart {
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.timenheart p {
+    font-family: "Space Grotesk";
+}
+
+.hearts {
+    display: flex;
+    justify-self: end;
+    color: red;
+    text-shadow: 0px 0px 10px red;
+    gap: 8px;
+    padding-right: 10px;
+    margin-top: -20px;
+}
+/*      Box1                */
+
+
+
+
+/*              Box2            */
+
+.box2 {
+    display: block;
+    justify-self: center;
+    background-color: rgb(29, 53, 114);
+    border: 2px solid rgb(98, 149, 215);
+    padding: 10px;
+    width: 600px;
+    height: 130px;
+    border-radius: 14px;
+    margin-top: 15px;
+}
+
+.box2 h3 {
+    font-family: "Space Grotesk";
+    font-size: 17px;
+    letter-spacing: 0.9;
+    padding-left: 22px;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.quest {
+    display: block;
+    justify-self: center;
+    background-color: black;
+    width: 550px;
+    height: 24px;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+#error {
+    padding-left: 15px;
+    margin-top: 3px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(99, 198, 66);
+    letter-spacing: 1px;
+}
+
+#hint {
+    border: 2px solid rgb(83, 78, 174);
+    background-color: rgba(79, 92, 190, 0.722);
+    font-family: "Poppins";
+    margin-left: 15px;
+    color: rgba(255, 255, 255, 0.93);
+    font-weight: 500;
+    border-radius: 9px;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 15px;
+    padding: 5px;
+    width: 90px;
+    scale: 0.95;
+    transition: 0.3s ease;
+    outline: none;
+}
+
+#hint:active {
+    scale: 0.93;
+}
+
+#show {
+    display: block;
+    margin-left: 120px;
+    margin-top: -28px;
+    font-family: "Poppins";
+    color: rgba(255, 255, 255, 0.903);
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 0;
+}
+
+@keyframes showHints {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hideHints {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/*      Box2            */
+
+
+
+
+
+
+/*          Choices             */
+.btns1 {
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+}
+
+.btns1 button {
+    display: block;
+    text-align: start;
+    padding: 5px;
+    background-color: rgb(29, 34, 84);
+    border: 2px solid rgb(31, 60, 105);
+    border-radius: 12px;
+    width: 300px;
+    height: 40px;
+    color: white;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+    scale: 1;
+    outline: none;
+}
+
+.btns1 button:hover{
+    box-shadow: 0px 0px 10px rgb(69, 119, 236);
+    scale: 1.02;
+}
+
+.btns1 button:active{
+    scale: 0.97;
+}
+
+.btns2 {
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+}
+
+.btns2 button {
+    display: block;
+    text-align: start;
+    padding: 5px;
+    background-color: rgb(29, 34, 84);
+    border: 2px solid rgb(31, 60, 105);
+    border-radius: 12px;
+    width: 300px;
+    height: 40px;
+    color: white;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 15px;
+    transition: 0.3s ease;
+    scale: 1;
+    outline: none;
+}
+
+.btns2 button:hover{
+    box-shadow: 0px 0px 10px rgb(69, 119, 236);
+    scale: 1.02;
+}
+
+.btns2 button:active{
+    scale: 0.97;
+}
+
+/*          Choices                 */
+
+
+
+
+
+
+/*          heart animation             */
+
+@keyframes loseHeart {
+    from {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+}
+
+
+/*              Pop     Up                      */
+
+.popup {
+    display: block;
+    justify-self: center;
+    background-color: rgb(40, 40, 122);
+    padding: 20px;
+    width: 330px;
+    height: 170px;
+    border-radius: 14px;
+    border: 2px solid rgb(66, 67, 154);
+    scale: 1.10;
+    z-index: 1px;
+    transform: translateZ(0px);
+    margin-top: 210px;
+    opacity: 0;
+    transform: translateY(-800px);
+}
+
+.popup h1 {
+    text-align: center;
+    font-family: "Space Grotesk";
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+#explain {
+    display: block;
+    justify-self: center;
+    font-family: "Space Grotesk";
+    text-align: center;
+    font-size: 14px;
+    width: 350px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+#goselect {
+    display: block;
+    justify-self: center;
+    padding: 7px;
+    width: 70px;
+    background-color: rgb(48, 48, 147);
+    color: white;
+    border: 2px solid rgb(63, 97, 149);
+    border-radius: 9px;
+    scale: 0.90;
+    opacity: 1;
+    transition: 0.3s ease;
+    outline: none;
+}
+
+#goselect:hover{
+    scale: 1;
+}
+
+#goselect:active {
+    scale: 0.90;
+}
+
+@keyframes down {
+    from {
+        transform: translateY(-800px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes up {
+    from {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-800px);
+        opacity: 0;
+    }
+}
+
+#levels {
+    display: none;
+    justify-self: center;
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.377);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    margin-top: -80px;
+}
+
+@keyframes blurOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes blurIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.lose {
+    display: block;
+    justify-self: center;
+    padding: 20px;
+    position: absolute;
+    background-color: rgb(22, 36, 93);
+    border: 2px solid rgb(103, 112, 212);
+    border-radius: 8px;
+    width: 250px;
+    height: 140px;
+    margin-top: -200px;
+    z-index: 20;
+    transform: translateY(-500px);
+}
+
+.lose h1 {
+    text-align: center;
+    font-family: "Space Grotesk";
+    color: white;
+    font-weight: 500;
+    font-size: 29px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.btns {
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+}
+
+.btns button {
+    padding: 10px;
+    width: 100px;
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    scale: 0.9;
+    transition: 0.4s ease;
+}
+
+.btns button:hover {
+    scale: 0.97;
+}
+
+.btns button:active {
+    scale: 0.90;
+}
+
+@keyframes losedown {
+    from {
+        transform: translateY(-500px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes loseUp {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-500pxs);
+    }
+}   
+
+@media (max-width: 768px) {
+    body {
+        padding: 16px 12px 24px;
+    }
+
+    .box1,
+    .box2 {
+        width: min(100%, 600px);
+        height: auto;
+        margin-top: 16px;
+    }
+
+    .quest {
+        width: calc(100% - 22px);
+        height: auto;
+        min-height: 36px;
+    }
+
+    #error {
+        white-space: pre-wrap;
+        word-break: break-word;
+        padding-right: 12px;
+    }
+
+    .btns1,
+    .btns2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btns1 button,
+    .btns2 button {
+        width: min(100%, 600px);
+        height: auto;
+        min-height: 44px;
+    }
+
+    #back {
+        margin-top: 16px;
+        margin-left: 0;
+    }
+
+    #levels {
+        position: fixed;
+        inset: 0;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .popup,
+    .lose {
+        width: min(88vw, 340px);
+        height: auto;
+        margin-top: 80px;
+    }
+
+    #explain {
+        width: auto;
+    }
+}
+body {
+    position: relative;
+}
+
+body::before,
+body::after {
+    position: fixed;
+    top: 50%;
+    z-index: 0;
+    width: 180px;
+    padding: 16px 14px;
+    border: 1px solid rgba(116, 150, 255, 0.22);
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(12, 20, 46, 0.86), rgba(8, 14, 31, 0.9));
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    color: rgba(163, 220, 255, 0.86);
+    font-family: "Space Grotesk", monospace;
+    font-size: 12px;
+    line-height: 1.65;
+    white-space: pre-line;
+    pointer-events: none;
+    backdrop-filter: blur(5px);
+}
+
+body::before {
+    content: "<div class='bug'>\A  fix(error);\A</div>\A\Aif (time < 10) {\A  dash();\A}";
+    left: 32px;
+    transform: translateY(-50%);
+    animation: codeFloatLeft 4.8s ease-in-out infinite;
+}
+
+body::after {
+    content: "function debug() {\A  return 'clean';\A}\A\Aconsole.log('dash');";
+    right: 32px;
+    transform: translateY(-50%);
+    animation: codeFloatRight 5.2s ease-in-out infinite;
+}
+
+@keyframes codeFloatLeft {
+    0% {
+        transform: translateY(-50%) translateX(0);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    }
+    50% {
+        transform: translateY(calc(-50% - 10px)) translateX(8px);
+        box-shadow: 0 24px 48px rgba(27, 126, 255, 0.18);
+    }
+    100% {
+        transform: translateY(-50%) translateX(0);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    }
+}
+
+@keyframes codeFloatRight {
+    0% {
+        transform: translateY(-50%) translateX(0);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    }
+    50% {
+        transform: translateY(calc(-50% + 10px)) translateX(-8px);
+        box-shadow: 0 24px 48px rgba(75, 212, 255, 0.18);
+    }
+    100% {
+        transform: translateY(-50%) translateX(0);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    }
+}
+
+.box1,
+.quiz,
+.code-box,
+.question,
+.answers {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1200px) {
+    body::before,
+    body::after {
+        width: 132px;
+        font-size: 10px;
+        opacity: 0.72;
+    }
+
+    body::before {
+        left: 14px;
+    }
+
+    body::after {
+        right: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    body::before,
+    body::after {
+        display: none;
+    }
+}

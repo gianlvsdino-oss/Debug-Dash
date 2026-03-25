@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(1200px 600px at 20% -10%, #1b2a4a 0%, rgba(27,42,74,0) 60%),
+        radial-gradient(900px 500px at 90% 10%, #2a1b4a 0%, rgba(42,27,74,0) 55%),
+        linear-gradient(160deg, #0b0f14 0%, #0f1623 35%, #111827 70%, #0b1020 100%);
+    overflow-x: hidden;
+}
+
+.contact-shell {
+    width: min(1120px, calc(100% - 40px));
+    margin: 46px auto 60px;
+}
+
+.contact-hero {
+    padding: 30px 32px;
+    border: 1px solid rgba(134, 167, 255, 0.18);
+    border-radius: 28px;
+    background: linear-gradient(180deg, rgba(11, 19, 50, 0.92), rgba(8, 14, 34, 0.96));
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
+}
+
+.contact-kicker {
+    margin-bottom: 10px;
+    font-family: "Space Grotesk";
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #8fe3ff;
+}
+
+.contact-hero h2 {
+    max-width: 720px;
+    font-family: "Poppins";
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.02;
+}
+
+.contact-lead {
+    max-width: 760px;
+    margin-top: 14px;
+    font-family: "Space Grotesk";
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(235, 242, 255, 0.88);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.contact-card,
+.contact-panel {
+    border: 1px solid rgba(134, 167, 255, 0.18);
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(11, 19, 50, 0.92), rgba(8, 14, 34, 0.96));
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
+}
+
+.contact-card {
+    padding: 22px;
+}
+
+.contact-card h3,
+.contact-panel h3 {
+    margin-bottom: 10px;
+    font-family: "Poppins";
+    font-size: 21px;
+}
+
+.contact-card p,
+.contact-panel p,
+.contact-list li {
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(235, 242, 255, 0.88);
+}
+
+.contact-value {
+    margin-bottom: 8px;
+    color: #97e7ff !important;
+    font-weight: 700;
+}
+
+.contact-panel {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 22px;
+    margin-top: 20px;
+    padding: 24px;
+}
+
+.contact-list {
+    padding-left: 18px;
+    margin-top: 10px;
+}
+
+.contact-note {
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(82, 115, 214, 0.12);
+}
+
+@media (max-width: 900px) {
+    .contact-grid,
+    .contact-panel {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-shell {
+        width: calc(100% - 24px);
+        margin-top: 28px;
+    }
+
+    .contact-hero,
+    .contact-card,
+    .contact-panel {
+        padding: 18px;
+    }
+}
+
+nav h1 {
+    display: block;
+    justify-self: start;
+    font-family: "Poppins";
+    padding-top: 30px;
+    padding-left: 70px;
+}
+
+nav ul {
+    display: flex;
+    justify-self: center;
+    list-style: none;
+    gap: 60px;
+    margin-left: 50px;
+    margin-top: -30px;
+    font-family: "Poppins";
+}
+
+nav li {
+    cursor: pointer;
+    scale: 1;
+    transition: 0.2s ease;
+}
+
+nav li:hover {
+    scale: 1.03;
+}
+
+nav li:active {
+    scale: 0.98;
+}
+
+#profile {
+    display: block;
+    justify-self: end;
+    margin-right: 45px;
+    margin-top: -34px;
+    width: 40px;
+    scale: 0.98;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+#profile:hover {
+    scale: 1.05;
+}
+
+#profile:active {
+    scale: 0.98;
+}
+#contact-page nav h1,
+nav h1 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#contact-page nav h1::after,
+nav h1::after {
+    content: "";
+    width: 52px;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(82, 219, 255, 0.08), rgba(82, 219, 255, 1));
+    box-shadow: 0 0 14px rgba(82, 219, 255, 0.5);
+    transform-origin: left center;
+    animation: dashBrand 1.8s ease-in-out infinite;
+}
+
+@keyframes dashBrand {
+    0% { opacity: 0.35; transform: translateX(-12px) scaleX(0.55); }
+    50% { opacity: 1; transform: translateX(4px) scaleX(1); }
+    100% { opacity: 0.35; transform: translateX(-12px) scaleX(0.55); }
+}

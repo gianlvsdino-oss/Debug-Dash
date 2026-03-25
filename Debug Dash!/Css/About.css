@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(1200px 600px at 20% -10%, #1b2a4a 0%, rgba(27,42,74,0) 60%),
+        radial-gradient(900px 500px at 90% 10%, #2a1b4a 0%, rgba(42,27,74,0) 55%),
+        linear-gradient(160deg, #0b0f14 0%, #0f1623 35%, #111827 70%, #0b1020 100%);
+}
+
+nav h1 {
+    display: block;
+    justify-self: start;
+    font-family: "Poppins";
+    padding-top: 30px;
+    padding-left: 70px;
+}
+
+nav ul {
+    display: flex;
+    justify-self: center;
+    list-style: none;
+    gap: 60px;
+    margin-left: 50px;
+    margin-top: -30px;
+    font-family: "Poppins";
+}
+
+nav li {
+    cursor: pointer;
+    scale: 1;
+    transition: 0.2s ease;
+}
+
+nav li:hover {
+    scale: 1.03;
+}
+
+nav li:active {
+    scale: 0.98;
+}
+
+#profile {
+    display: block;
+    justify-self: end;
+    margin-right: 45px;
+    margin-top: -34px;
+    width: 40px;
+    scale: 0.98;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+#profile:hover {
+    scale: 1.05;
+}
+
+#profile:active {
+    scale: 0.98;
+}
+#about-page nav h1,
+nav h1 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#about-page nav h1::after,
+nav h1::after {
+    content: "";
+    width: 52px;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(82, 219, 255, 0.08), rgba(82, 219, 255, 1));
+    box-shadow: 0 0 14px rgba(82, 219, 255, 0.5);
+    transform-origin: left center;
+    animation: dashBrand 1.8s ease-in-out infinite;
+}
+
+@keyframes dashBrand {
+    0% { opacity: 0.35; transform: translateX(-12px) scaleX(0.55); }
+    50% { opacity: 1; transform: translateX(4px) scaleX(1); }
+    100% { opacity: 0.35; transform: translateX(-12px) scaleX(0.55); }
+}
+
+.about h1 {
+    display: block;
+    justify-self: start;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 160px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    display: block;
+    margin-left: 200px;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 40px;
+    width: 550px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.881);
+}
+
+.purpose h1 {
+    display: block;
+    justify-self: end;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+}
+
+.purpose p {
+    justify-self: end;
+    text-align: end;
+    display: block;
+    margin-right: 200px;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 40px;
+    width: 550px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.881);
+}
+
+
+/*                        Team 1                      */
+
+.team {
+    margin-top: 200px;
+}
+
+.team1 {
+    display: flex;
+    justify-self: center;
+    gap: 120px;
+}
+
+.team1 div {
+    border: 2px solid #ffffff;
+    justify-self: center;
+    width: 250px;
+    height: 240px;
+    border-radius: 50%;
+    scale: 0.70;
+}
+
+.teamname {
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+.name1 {
+    display: block;
+    justify-self: start;
+    margin-left: 195px;
+}
+
+.name2 {
+    display: block;
+    justify-self: start;
+    margin-left: 600px;
+    margin-top: -35px;
+}
+
+.name3 {
+    display: block;
+    justify-self: end;
+    margin-right: 610px;
+    margin-top: -35px;
+}
+
+.name4 {
+    display: block;
+    justify-self: end;
+    margin-right: 220px;
+    margin-top: -35px;
+}
+
+.teamp {
+    font-family: "Space Grotesk";
+    font-weight: 400;
+    margin-bottom: 150px;
+}
+
+.p1{
+    display: block;
+    justify-self: start;
+    margin-left: 170px;
+}
+
+.p2 {
+    display: block;
+    justify-self: start;
+    margin-left: 565px;
+    margin-top: -20px;
+}
+
+.p3 {
+    display: block;
+    justify-self: end;
+    margin-right: 540px;
+    margin-top: -20px;
+}
+
+.p4 {
+    display: block;
+    justify-self: end;
+    margin-right: 200px;
+    margin-top: -20px;
+}
+
+/*                  Teaam 1             */
+
+.team2 {
+    display: flex;
+    justify-self: center;
+    gap: 120px;
+}
+
+.team2 div {
+    border: 2px solid #ffffff;
+    justify-self: center;
+    width: 250px;
+    height: 240px;
+    border-radius: 50%;
+    scale: 0.70;
+}
+
+
+.name5 {
+    display: block;
+    justify-self: start;
+    margin-left: 200px;
+}
+
+.name6 {
+    display: block;
+    justify-self: start;
+    margin-left: 565px;
+    margin-top: -35px;
+}
+
+.name7 {
+    display: block;
+    justify-self: end;
+    margin-right: 560px;
+    margin-top: -35px;
+}
+
+.name8 {
+    display: block;
+    justify-self: end;
+    margin-right: 220px;
+    margin-top: -35px;
+}
+
+
+.p5{
+    display: block;
+    justify-self: start;
+    margin-left: 240px;
+}
+
+.p6 {
+    display: block;
+    justify-self: start;
+    margin-left: 620px;
+    margin-top: -20px;
+}
+
+.p7 {
+    display: block;
+    justify-self: end;
+    margin-right: 595px;
+    margin-top: -20px;
+}
+
+.p8 {
+    display: block;
+    justify-self: end;
+    margin-right: 220px;
+    margin-top: -20px;
+}
