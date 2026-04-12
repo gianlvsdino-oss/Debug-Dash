@@ -1,0 +1,199 @@
+int x = 10 / 0;
+
+A. int x = 10 / 2;
+B. int x = 10 * 0;
+C. int x = 10 + 0;
+D. int x = 0 / 10;
+Answer: A
+
+------------------------------------------
+
+String s = null; System.out.println(s.length());
+
+A. String s = ""; System.out.println(s.length());
+B. String s = null; System.out.println(s);
+C. String s = "hi"; System.out.println(s.length());
+D. String s; System.out.println(s.length());
+Answer: A
+
+------------------------------------------
+
+int[] a = {1,2,3}; System.out.println(a[3]);
+
+A. System.out.println(a[2]);
+B. System.out.println(a[1]);
+C. System.out.println(a.length);
+D. System.out.println(a[0]);
+Answer: A
+
+------------------------------------------
+
+Integer.parseInt("12a");
+
+A. Integer.parseInt("12");
+B. Integer.parseInt("abc");
+C. Integer.parseInt("");
+D. Integer.parseInt(null);
+Answer: A
+
+------------------------------------------
+
+Object o = 10; String s = (String) o;
+
+A. Object o = "10"; String s = (String) o;
+B. Object o = 10; Integer s = (Integer) o;
+C. Object o = 10; String s = o.toString();
+D. Object o = 10; String s = (String) o.toString();
+Answer: C
+
+------------------------------------------
+
+int x; System.out.println(x);
+
+A. int x = 0; System.out.println(x);
+B. int x; x = 5; System.out.println(x);
+C. int x = 10; System.out.println(x);
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+FileReader f = new FileReader("a.txt");
+
+A. try { FileReader f = new FileReader("a.txt"); } catch(Exception e) {}
+B. FileReader f;
+C. String f = "a.txt";
+D. int f = 0;
+Answer: A
+
+------------------------------------------
+
+"hello".charAt(5);
+
+A. "hello".charAt(4);
+B. "hello".charAt(0);
+C. "hello".charAt(2);
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+int[] a = null; System.out.println(a.length);
+
+A. int[] a = new int[3]; System.out.println(a.length);
+B. int[] a = {1,2}; System.out.println(a.length);
+C. int[] a = {}; System.out.println(a.length);
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+Integer.valueOf("abc");
+
+A. Integer.valueOf("123");
+B. Integer.valueOf("0");
+C. Integer.valueOf("-5");
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+List<Integer> list = new ArrayList<>(); list.add("hi");
+
+A. list.add(5);
+B. list.add(10);
+C. list.add(0);
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+int[] a = new int[-1];
+
+A. int[] a = new int[1];
+B. int[] a = new int[5];
+C. int[] a = new int[0];
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+Thread t = new Thread(); t.start(); t.start();
+
+A. Thread t = new Thread(); t.start();
+B. Thread t = new Thread(); t.run();
+C. new Thread().start();
+D. All of the above
+Answer: A
+
+------------------------------------------
+
+System.out.println("123" + 10);
+
+A. System.out.println(123 + 10);
+B. System.out.println(Integer.parseInt("123") + 10);
+C. System.out.println(100 + 33);
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+int x = 5; if(x = 10){}
+
+A. if(x == 10){}
+B. if(x > 10){}
+C. if(x < 10){}
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+"abc".substring(1,5);
+
+A. "abc".substring(1,3);
+B. "abc".substring(0,3);
+C. "abc".substring(2,3);
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+System.out.println((int)"10");
+
+A. System.out.println(Integer.parseInt("10"));
+B. System.out.println(10);
+C. int x = 10; System.out.println(x);
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+Boolean b = (Boolean)"true";
+
+A. Boolean b = Boolean.parseBoolean("true");
+B. Boolean b = true;
+C. boolean b = Boolean.parseBoolean("true");
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+for(int i=0;i<=3;i++){ System.out.println(i); } // array size = 3
+
+A. for(int i=0;i<3;i++){}
+B. for(int i=0;i<=2;i++){}
+C. for(int i=0;i<array.length;i++){}
+D. All of the above
+Answer: D
+
+------------------------------------------
+
+String s = null; System.out.println(s.equals("hi"));
+
+A. String s = "hi"; System.out.println(s.equals("hi"));
+B. System.out.println("hi".equals(s));
+C. if(s != null) System.out.println(s.equals("hi"));
+D. All of the above
+Answer: D
+
+------------------------------------------

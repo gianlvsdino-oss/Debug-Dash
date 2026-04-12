@@ -1,0 +1,272 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow: hidden;
+}
+
+nav h1 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+nav h1::after {
+    content: "";
+    width: clamp(36px, 5vw, 58px);
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(95, 224, 255, 0.1), rgba(95, 224, 255, 1));
+    box-shadow: 0 0 16px rgba(95, 224, 255, 0.55);
+    transform-origin: left center;
+    animation: dashTrail 1.8s ease-in-out infinite;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+section,
+.profile,
+.titleselect {
+    box-sizing: border-box;
+}
+
+section {
+    width: min(1180px, calc(100% - 32px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile {
+    width: min(720px, calc(100% - 32px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleRow {
+    width: auto;
+    max-width: 100%;
+}
+
+.scale {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.level,
+.streak,
+.achievement {
+    min-width: 0;
+}
+
+.moto,
+h1.moto {
+    position: relative;
+}
+
+.moto span,
+h1.moto span {
+    position: relative;
+    display: inline-block;
+}
+
+.moto span::after,
+h1.moto span::after {
+    content: "";
+    position: absolute;
+    left: 6%;
+    bottom: -10px;
+    width: 88%;
+    height: 8px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(120, 160, 255, 0), rgba(120, 160, 255, 0.85), rgba(96, 236, 255, 0));
+    filter: blur(0.4px);
+    animation: dashSweep 1.6s ease-in-out infinite;
+}
+
+@keyframes dashTrail {
+    0% {
+        opacity: 0.35;
+        transform: scaleX(0.5) translateX(-8px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scaleX(1) translateX(0);
+    }
+
+    100% {
+        opacity: 0.35;
+        transform: scaleX(0.5) translateX(-8px);
+    }
+}
+
+@keyframes dashSweep {
+    0% {
+        opacity: 0.2;
+        transform: translateX(-10px) scaleX(0.75);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(8px) scaleX(1);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translateX(-10px) scaleX(0.75);
+    }
+}
+
+@media (max-width: 1024px) {
+    nav {
+        width: min(100%, calc(100% - 24px));
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #profile {
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    section {
+        width: min(100%, calc(100% - 24px));
+    }
+
+    .profile {
+        width: min(100%, calc(100% - 24px));
+        margin-top: 32px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: start;
+        row-gap: 12px;
+    }
+
+    nav h1 {
+        padding-left: 0 !important;
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    nav h1::after {
+        width: 36px;
+    }
+
+    nav ul {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .profile {
+        margin-top: 20px;
+    }
+
+    .pfp {
+        width: 72px;
+        height: 72px;
+    }
+
+    .pfp img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #user,
+    .titleRow {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    #user {
+        margin-top: 12px;
+    }
+
+    .pen {
+        margin-top: -86px;
+        margin-left: 56px;
+    }
+
+    .scale {
+        grid-template-columns: 1fr;
+    }
+
+    .titleselect {
+        width: min(100%, calc(100% - 24px));
+        padding: 18px;
+    }
+
+    .avatars1,
+    .avatars2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .avatars1 img,
+    .avatars2 img {
+        width: 64px;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        padding-bottom: 28px;
+    }
+
+    section {
+        width: min(100%, calc(100% - 20px));
+    }
+
+    .profile {
+        width: min(100%, calc(100% - 20px));
+        padding: 16px;
+    }
+
+    .moto,
+    h1.moto {
+        font-size: clamp(2rem, 9vw, 3.3rem) !important;
+        line-height: 1.05;
+    }
+
+    .discrip,
+    .identity {
+        max-width: 100%;
+    }
+
+    div[btns1],
+    div[btns2] {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    div[btns1] button,
+    div[btns2] button,
+    #guestlog,
+    #guestsign {
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(1200px 600px at 20% -10%, #1b2a4a 0%, rgba(27,42,74,0) 60%),
+        radial-gradient(900px 500px at 90% 10%, #2a1b4a 0%, rgba(42,27,74,0) 55%),
+        linear-gradient(160deg, #0b0f14 0%, #0f1623 35%, #111827 70%, #0b1020 100%);
+    color: #e6edf3;
+    animation: fadeIn 0.7s ease forwards;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav {
+    display: block;
+}
+
+nav h1 {
+    display: block;
+    justify-self: start;
+    font-family: "Poppins";
+    letter-spacing: -2px;
+    font-weight: 700;
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+nav h1::after {
+    content: none;
+}
+
+nav ul {
+    display: flex;
+    justify-self: center;
+    list-style: none;
+    gap: 60px;
+    margin-top: -35px;
+    margin-left: 50px;
+}
+
+nav ul li {
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    color: white;
+    transition: 0.3s ease;
+    scale: 1.05;
+    cursor: pointer;
+    position: relative;
+}
+
+nav ul li:hover{
+    scale: 1.15;
+}
+
+nav ul li:active{
+    scale: 1.05;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#profile {
+    display: block;
+    justify-self: end;
+    margin-right: 45px;
+    margin-top: -34px;
+    width: 40px;
+    scale: 0.98;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+#profile:hover {
+    scale: 1.05;
+}
+
+#profile:active {
+    scale: 0.98;
+}
+/*              navigationn         */
+
+
+
+
+
+
+
+
+
+/*                  Spin Language   */
+
+.endtitle {
+    display: block;
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-weight: 600;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    width: 300px;    
+    height: 250px;     
+    margin: auto;
+    position: relative;
+    overflow: hidden; 
+    border: 2px solid #6562ef;
+    border-radius: 10px;
+    text-align: center;
+    scale: 0.88;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding-top: 10px;
+}
+
+.carousel-item.active {
+    left: 0;
+    opacity: 1;
+}
+
+.carousel-item.prev {
+    left: -100%;
+    opacity: 0;
+}
+
+#end1 {
+    display: block;
+    justify-self: center;
+    background-color: rgb(15, 15, 85);
+    border: 2px solid rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 12px;
+    transition: 0.4s ease;
+    scale: 1.02;
+}
+
+#end1:hover{
+    scale: 1.02;
+    background-color: rgb(16, 16, 76);
+}
+
+#end1:active {
+    scale: 0.98;
+    background-color: rgb(16, 16, 76);
+}
+
+#end1 img {
+    display: block;
+    justify-self: center;
+    width: 120px;
+    margin-top: 10px;
+}
+
+#end1  h3 {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#end1 p {
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#end2 {
+    display: block;
+    justify-self: center;
+    background-color: rgb(15, 15, 85);
+    border: 2px solid rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 12px;
+    transition: 0.4s ease;
+    scale: 1.02;
+}
+
+#end2:hover{
+    scale: 1.02;
+    background-color: rgb(16, 16, 76);
+}
+
+#end2:active {
+    scale: 0.98;
+    background-color: rgb(16, 16, 76);
+}
+
+#end2 img {
+    display: block;
+    justify-self: center;
+    width: 120px;
+    margin-top: 10px;
+}
+
+#end2 h3 {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#end2 p {
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#end3 {
+    display: block;
+    justify-self: center;
+    background-color: rgb(15, 15, 85);
+    border: 2px solid rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 12px;
+    transition: 0.4s ease;
+    scale: 1.02;
+}
+
+#end3:hover{
+    scale: 1.02;
+    background-color: rgb(16, 16, 76);
+}
+
+#end3:active {
+    scale: 0.98;
+    background-color: rgb(16, 16, 76);
+}
+
+#end3 img {
+    display: block;
+    justify-self: center;
+    width: 120px;
+    margin-top: 10px;
+}
+
+#end3 h3 {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#end3 p {
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#end4 {
+    display: block;
+    justify-self: center;
+    background-color: rgb(15, 15, 85);
+    border: 2px solid rgb(255, 255, 255);
+    width: 300px;
+    border-radius: 12px;
+    transition: 0.4s ease;
+    scale: 1.02;
+}
+
+#end4:hover{
+    scale: 1.02;
+    background-color: rgb(16, 16, 76);
+}
+
+#end4:active {
+    scale: 0.98;
+    background-color: rgb(16, 16, 76);
+}
+
+#end4 img {
+    display: block;
+    justify-self: center;
+    width: 120px;
+    margin-top: 10px;
+}
+
+#end4 h3 {
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#end4 p {
+    text-align: center;
+    font-family: "Space Grotesk";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+#leftarrow {
+    display: block;
+    position: absolute;
+    width: 50px;
+    transform: rotateZ(90deg);
+    margin-left: 540px;
+    margin-top: 95px;
+    transition: 0.3s ease;
+    scale: 0.90;
+}
+
+#leftarrow:hover{
+    scale: 0.95;
+}
+
+#leftarrow:active{
+    scale: 0.90;
+}
+
+#rightarrow {
+    display: block;
+    position: absolute;
+    justify-self: end;
+    width: 50px;
+    transform: rotateZ(-90deg);
+    margin-right: 540px;
+    margin-top: -158px;
+    transition: 0.3s ease;
+    scale: 0.90;
+}
+
+#rightarrow:hover{
+    scale: 0.95;
+}
+
+#rightarrow:active{
+    scale: 0.90;
+}
+
+
+
+
+/*          Leadearboards           */
+
+.lead1 {
+    display: flex;
+    justify-self: center;
+    gap: 700px;
+}
+
+.lead1 div {
+    border: 1px solid rgba(255, 255, 255, 0.663);
+    border-radius: 12px;
+    background-color: rgb(4, 4, 44);
+    padding: 20px;
+    height: 220px;
+    width: 280px;
+    margin-top: -400px;
+    overflow-x: hidden;
+}
+
+.lead1 div h1 {
+    text-align: start;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.lead2 {
+    display: flex;
+    justify-self: center;
+    gap: 700px;
+}
+
+.lead2 div {
+    border: 1px solid rgba(255, 255, 255, 0.663);
+    border-radius: 12px;
+    background-color: rgb(4, 4, 44);
+    padding: 20px;
+    height: 220px;
+    width: 280px;
+    margin-top: -70px;
+    overflow-x: hidden;
+}
+
+.lead2 div h1 {
+    text-align: start;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.leader {
+    font-family: "Space Grotesk";
+    font-weight: 400;
+    font-size: 15px;
+    display: block;
+    text-align: end;
+    margin-top: -22px;
+    margin-right: -5px;
+}
+
+.line {
+    display: block;
+    justify-self: center;
+    background-color: white;
+    height: 1px;
+    width: 120%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+#htmlLeaderboard li,
+#cssLeaderboard li,
+#jsLeaderboard li,
+#javaLeaderboard li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5px;
+    font-family: "Space Grotesk";
+}
+.username {
+    font-weight: bold;
+}
+.streak {
+    color: orange;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        position: relative;
+        padding: 24px 20px 12px;
+    }
+
+    nav h1 {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    nav ul {
+        justify-self: start;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-top: 18px;
+        margin-left: 0;
+    }
+
+    #profile {
+        margin-right: 0;
+        margin-top: 0;
+        position: absolute;
+        top: 24px;
+        right: 20px;
+    }
+
+    #navUserSearch {
+        right: 72px !important;
+        top: 20px !important;
+        transform: none !important;
+    }
+
+    .endtitle {
+        margin-top: 56px;
+    }
+
+    #leftarrow,
+    #rightarrow {
+        position: static;
+        margin: 0;
+        width: 42px;
+    }
+
+    #leftarrow {
+        justify-self: center;
+        margin-bottom: 12px;
+    }
+
+    #rightarrow {
+        display: block;
+        justify-self: center;
+        margin-top: 12px;
+    }
+
+    .lead1,
+    .lead2 {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+        gap: 20px;
+        width: min(100% - 40px, 760px);
+        margin: 28px auto 0;
+    }
+
+    .lead1 div,
+    .lead2 div {
+        width: auto;
+        margin-top: 0;
+        height: auto;
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding-top: 18px;
+    }
+
+    nav ul {
+        gap: 14px;
+        font-size: 14px;
+        padding-right: 56px;
+    }
+
+    #navUserSearch {
+        position: static !important;
+        transform: none !important;
+        margin-top: 14px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    #navUserSearch input {
+        width: min(100%, 180px) !important;
+    }
+
+    #profile {
+        top: 18px;
+        right: 20px;
+        width: 34px;
+    }
+
+    .carousel {
+        width: min(100% - 32px, 320px);
+        height: 240px;
+    }
+
+    #end1,
+    #end2,
+    #end3,
+    #end4 {
+        width: 100%;
+    }
+
+    .lead1,
+    .lead2 {
+        grid-template-columns: 1fr;
+        width: calc(100% - 24px);
+        gap: 14px;
+        margin-top: 20px;
+    }
+}
+nav h1 {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+nav h1::after {
+    content: "";
+    width: 52px;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(82, 219, 255, 0.08), rgba(82, 219, 255, 1));
+    box-shadow: 0 0 14px rgba(82, 219, 255, 0.5);
+    transform-origin: left center;
+    animation: dashBrand 1.8s ease-in-out infinite;
+}
+
+@keyframes dashBrand {
+    0% { opacity: 0.35; transform: translateX(-12px) scaleX(0.55); }
+    50% { opacity: 1; transform: translateX(4px) scaleX(1); }
+    100% { opacity: 0.35; transform: translateX(-12px) scaleX(0.55); }
+}

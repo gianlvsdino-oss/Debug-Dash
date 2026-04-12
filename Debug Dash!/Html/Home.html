@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/Home.css">
+    <link rel="stylesheet" href="/Css/NavMenu.css">
+    <link rel="icon" type="image/svg+xml" href="/Pics/dd-favicon.svg">
+    <script type="module" src="/Js/NavMenu.js" defer></script>
+    <script src="/Js/Home.js" defer></script>
+    <title>Home | Debug Dash!</title>
+</head>
+<body>
+    <nav>
+        <h1>Debug Dash!</h1>
+        <ul>
+            <li onclick="goHome()">Home</li>
+            <li onclick="goDebug()">Debug</li>
+            <li onclick="goEndless()">Endless</li>
+            <li onclick="goAchieve()">Achievements</li>
+        </ul>
+        <img src="/pics/profile.png" alt="profile" id="profile" data-link="/Html/Profile.html">
+    </nav>
+
+
+    <section>
+        <p class="identity">Debugging Quiz</p>
+        <h1 class="moto">Race the clock. <span>Fix the bug.</span> Level up.</h1>
+        <p class="discrip">Debug Dash! a debugging quiz game that helps you boost your
+            problem solving skills and debugging critical thinking.
+        </p>
+        <div btns1>
+            <button id="play" onclick="goDebug()">Debug Now</button>
+        </div>
+        <div class="boxes">
+            <div>
+                <h1>4</h1>
+                <p>Four Different Languange</p>
+            </div>
+            <div>
+                <h1>30+</h1>
+                <p>More Achievements</p>
+            </div>
+            <div>
+                <h1>30+</h1>
+                <p>Titles To Earned</p>
+            </div>
+        </div>
+        <div class="ui">
+            <pre><code id="typing"></code></pre>
+        </div>
+    </section>
+</body>
+</html>
